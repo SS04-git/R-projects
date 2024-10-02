@@ -1,0 +1,212 @@
+[
+  {
+    "objectID": "posts/welcome/index.html",
+    "href": "posts/welcome/index.html",
+    "title": "Welcome To My Blog",
+    "section": "",
+    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "My Blog for Fundamentals of Statistics",
+    "section": "",
+    "text": "Day 2(Summaries)\n\n\n\n\n\n\n\n\n\n\n\nSara\n\n\n\n\n\n\n\n\n\n\n\n\nMy Name Is Sara\n\n\n\n\n\n\n\n\n\n\n\nSara Saju\n\n\n\n\n\n\n\n\n\n\n\n\nPost With Code\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\nSep 26, 2024\n\n\nHarlow Malloc\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nSep 23, 2024\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this blog"
+  },
+  {
+    "objectID": "posts/post-with-code/index.html",
+    "href": "posts/post-with-code/index.html",
+    "title": "Post With Code",
+    "section": "",
+    "text": "This is a post with executable code.\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "posts/my-name-is-sara/index.html",
+    "href": "posts/my-name-is-sara/index.html",
+    "title": "My Name Is Sara",
+    "section": "",
+    "text": "I am writing this for Arvind’s class. Its kind of interesting."
+  },
+  {
+    "objectID": "posts/my-name-is-sara/index.html#introduction",
+    "href": "posts/my-name-is-sara/index.html#introduction",
+    "title": "My Name Is Sara",
+    "section": "",
+    "text": "I am writing this for Arvind’s class. Its kind of interesting."
+  },
+  {
+    "objectID": "posts/my-name-is-sara/index.html#my-first-piece-of-r-code",
+    "href": "posts/my-name-is-sara/index.html#my-first-piece-of-r-code",
+    "title": "My Name Is Sara",
+    "section": "My First Piece of R Code",
+    "text": "My First Piece of R Code\n\nlibrary(tidyverse)\n\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.1.4     ✔ readr     2.1.5\n✔ forcats   1.0.0     ✔ stringr   1.5.1\n✔ ggplot2   3.5.1     ✔ tibble    3.2.1\n✔ lubridate 1.9.3     ✔ tidyr     1.3.1\n✔ purrr     1.0.2     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors\n\nlibrary(ggformula)\n\nLoading required package: scales\n\nAttaching package: 'scales'\n\nThe following object is masked from 'package:purrr':\n\n    discard\n\nThe following object is masked from 'package:readr':\n\n    col_factor\n\nLoading required package: ggridges\n\nNew to ggformula?  Try the tutorials: \n    learnr::run_tutorial(\"introduction\", package = \"ggformula\")\n    learnr::run_tutorial(\"refining\", package = \"ggformula\")\n\nlibrary(babynames)"
+  },
+  {
+    "objectID": "posts/my-name-is-sara/index.html#using-the-babynames-library-to-get-a-list-of-data",
+    "href": "posts/my-name-is-sara/index.html#using-the-babynames-library-to-get-a-list-of-data",
+    "title": "My Name Is Sara",
+    "section": "Using the babynames library to get a list of data",
+    "text": "Using the babynames library to get a list of data\n\nbabynames\n\n# A tibble: 1,924,665 × 5\n    year sex   name          n   prop\n   &lt;dbl&gt; &lt;chr&gt; &lt;chr&gt;     &lt;int&gt;  &lt;dbl&gt;\n 1  1880 F     Mary       7065 0.0724\n 2  1880 F     Anna       2604 0.0267\n 3  1880 F     Emma       2003 0.0205\n 4  1880 F     Elizabeth  1939 0.0199\n 5  1880 F     Minnie     1746 0.0179\n 6  1880 F     Margaret   1578 0.0162\n 7  1880 F     Ida        1472 0.0151\n 8  1880 F     Alice      1414 0.0145\n 9  1880 F     Bertha     1320 0.0135\n10  1880 F     Sarah      1288 0.0132\n# ℹ 1,924,655 more rows"
+  },
+  {
+    "objectID": "posts/my-name-is-sara/index.html#filtering-the-data",
+    "href": "posts/my-name-is-sara/index.html#filtering-the-data",
+    "title": "My Name Is Sara",
+    "section": "Filtering the data",
+    "text": "Filtering the data\n\nbabynames %&gt;% filter (name == \"Sara\")\n\n# A tibble: 222 × 5\n    year sex   name      n    prop\n   &lt;dbl&gt; &lt;chr&gt; &lt;chr&gt; &lt;int&gt;   &lt;dbl&gt;\n 1  1880 F     Sara    165 0.00169\n 2  1881 F     Sara    147 0.00149\n 3  1882 F     Sara    180 0.00156\n 4  1883 F     Sara    183 0.00152\n 5  1884 F     Sara    197 0.00143\n 6  1885 F     Sara    215 0.00151\n 7  1886 F     Sara    247 0.00161\n 8  1887 F     Sara    214 0.00138\n 9  1888 F     Sara    293 0.00155\n10  1889 F     Sara    286 0.00151\n# ℹ 212 more rows"
+  },
+  {
+    "objectID": "posts/my-name-is-sara/index.html#creating-a-graph",
+    "href": "posts/my-name-is-sara/index.html#creating-a-graph",
+    "title": "My Name Is Sara",
+    "section": "Creating a graph",
+    "text": "Creating a graph\n\nbabynames %&gt;% filter(name == \"Sara\") %&gt;% \n  gf_line(n~year)\n\n\n\n\n\n\n\n\nSara was a more popular name than I thought it was."
+  },
+  {
+    "objectID": "posts/my-name-is-sara/index.html#filtering-data-and-plotting-names-with-different-spellings",
+    "href": "posts/my-name-is-sara/index.html#filtering-data-and-plotting-names-with-different-spellings",
+    "title": "My Name Is Sara",
+    "section": "Filtering data and plotting names with different spellings",
+    "text": "Filtering data and plotting names with different spellings\n\nbabynames %&gt;% filter(name == \"Sara\"| name == \"Sarah\") %&gt;% gf_line(n~year)"
+  },
+  {
+    "objectID": "posts/my-name-is-sara/index.html#filtering-the-data-part-2",
+    "href": "posts/my-name-is-sara/index.html#filtering-the-data-part-2",
+    "title": "My Name Is Sara",
+    "section": "Filtering the data (part 2)",
+    "text": "Filtering the data (part 2)\n\nbabynames %&gt;% filter(name == \"Maya\"| name == \"Maaya\")\n\n# A tibble: 98 × 5\n    year sex   name      n       prop\n   &lt;dbl&gt; &lt;chr&gt; &lt;chr&gt; &lt;int&gt;      &lt;dbl&gt;\n 1  1940 F     Maya      5 0.00000423\n 2  1942 F     Maya      5 0.0000036 \n 3  1943 F     Maya      5 0.00000348\n 4  1949 F     Maya     10 0.0000057 \n 5  1950 F     Maya      7 0.00000398\n 6  1951 F     Maya      8 0.00000433\n 7  1952 F     Maya      7 0.00000368\n 8  1953 F     Maya     15 0.00000778\n 9  1954 F     Maya      9 0.00000452\n10  1955 F     Maya      9 0.00000449\n# ℹ 88 more rows"
+  },
+  {
+    "objectID": "posts/my-name-is-sara/index.html#graph-of-the-received-data",
+    "href": "posts/my-name-is-sara/index.html#graph-of-the-received-data",
+    "title": "My Name Is Sara",
+    "section": "Graph of the received data",
+    "text": "Graph of the received data\n\nbabynames %&gt;% filter(name == \"Maya\"| name == \"Maaya\") %&gt;% gf_line (n~year)"
+  },
+  {
+    "objectID": "posts/day 2/index.html",
+    "href": "posts/day 2/index.html",
+    "title": "Day 2(Summaries)",
+    "section": "",
+    "text": "This is the work done for day 2 where we summarized data including mpg."
+  },
+  {
+    "objectID": "posts/day 2/index.html#introduction",
+    "href": "posts/day 2/index.html#introduction",
+    "title": "Day 2(Summaries)",
+    "section": "",
+    "text": "This is the work done for day 2 where we summarized data including mpg."
+  },
+  {
+    "objectID": "posts/day 2/index.html#import-packages",
+    "href": "posts/day 2/index.html#import-packages",
+    "title": "Day 2(Summaries)",
+    "section": "Import packages",
+    "text": "Import packages\nAlways place ‘#| label: setup’ before calling the packages.\nAlso, one has to install packages at the console below using : install.packages(““).\n\nlibrary(tidyverse)\n\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.1.4     ✔ readr     2.1.5\n✔ forcats   1.0.0     ✔ stringr   1.5.1\n✔ ggplot2   3.5.1     ✔ tibble    3.2.1\n✔ lubridate 1.9.3     ✔ tidyr     1.3.1\n✔ purrr     1.0.2     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors\n\nlibrary(mosaic)\n\nRegistered S3 method overwritten by 'mosaic':\n  method                           from   \n  fortify.SpatialPolygonsDataFrame ggplot2\n\nThe 'mosaic' package masks several functions from core packages in order to add \nadditional features.  The original behavior of these functions should not be affected by this.\n\nAttaching package: 'mosaic'\n\nThe following object is masked from 'package:Matrix':\n\n    mean\n\nThe following objects are masked from 'package:dplyr':\n\n    count, do, tally\n\nThe following object is masked from 'package:purrr':\n\n    cross\n\nThe following object is masked from 'package:ggplot2':\n\n    stat\n\nThe following objects are masked from 'package:stats':\n\n    binom.test, cor, cor.test, cov, fivenum, IQR, median, prop.test,\n    quantile, sd, t.test, var\n\nThe following objects are masked from 'package:base':\n\n    max, mean, min, prod, range, sample, sum\n\nlibrary(skimr)\n\n\nAttaching package: 'skimr'\n\nThe following object is masked from 'package:mosaic':\n\n    n_missing\n\nlibrary(knitr)\nlibrary(kableExtra)\n\n\nAttaching package: 'kableExtra'\n\nThe following object is masked from 'package:dplyr':\n\n    group_rows\n\nlibrary(ggformula)\nlibrary(babynames)"
+  },
+  {
+    "objectID": "posts/day 2/index.html#mpg-dataset",
+    "href": "posts/day 2/index.html#mpg-dataset",
+    "title": "Day 2(Summaries)",
+    "section": "Mpg Dataset",
+    "text": "Mpg Dataset\n\nmpg\n\n# A tibble: 234 × 11\n   manufacturer model      displ  year   cyl trans drv     cty   hwy fl    class\n   &lt;chr&gt;        &lt;chr&gt;      &lt;dbl&gt; &lt;int&gt; &lt;int&gt; &lt;chr&gt; &lt;chr&gt; &lt;int&gt; &lt;int&gt; &lt;chr&gt; &lt;chr&gt;\n 1 audi         a4           1.8  1999     4 auto… f        18    29 p     comp…\n 2 audi         a4           1.8  1999     4 manu… f        21    29 p     comp…\n 3 audi         a4           2    2008     4 manu… f        20    31 p     comp…\n 4 audi         a4           2    2008     4 auto… f        21    30 p     comp…\n 5 audi         a4           2.8  1999     6 auto… f        16    26 p     comp…\n 6 audi         a4           2.8  1999     6 manu… f        18    26 p     comp…\n 7 audi         a4           3.1  2008     6 auto… f        18    27 p     comp…\n 8 audi         a4 quattro   1.8  1999     4 manu… 4        18    26 p     comp…\n 9 audi         a4 quattro   1.8  1999     4 auto… 4        16    25 p     comp…\n10 audi         a4 quattro   2    2008     4 manu… 4        20    28 p     comp…\n# ℹ 224 more rows"
+  },
+  {
+    "objectID": "posts/day 2/index.html#filtering-the-data1st-10",
+    "href": "posts/day 2/index.html#filtering-the-data1st-10",
+    "title": "Day 2(Summaries)",
+    "section": "Filtering the data(1st 10)",
+    "text": "Filtering the data(1st 10)\n\nmpg %&gt;% \n  head(10)\n\n# A tibble: 10 × 11\n   manufacturer model      displ  year   cyl trans drv     cty   hwy fl    class\n   &lt;chr&gt;        &lt;chr&gt;      &lt;dbl&gt; &lt;int&gt; &lt;int&gt; &lt;chr&gt; &lt;chr&gt; &lt;int&gt; &lt;int&gt; &lt;chr&gt; &lt;chr&gt;\n 1 audi         a4           1.8  1999     4 auto… f        18    29 p     comp…\n 2 audi         a4           1.8  1999     4 manu… f        21    29 p     comp…\n 3 audi         a4           2    2008     4 manu… f        20    31 p     comp…\n 4 audi         a4           2    2008     4 auto… f        21    30 p     comp…\n 5 audi         a4           2.8  1999     6 auto… f        16    26 p     comp…\n 6 audi         a4           2.8  1999     6 manu… f        18    26 p     comp…\n 7 audi         a4           3.1  2008     6 auto… f        18    27 p     comp…\n 8 audi         a4 quattro   1.8  1999     4 manu… 4        18    26 p     comp…\n 9 audi         a4 quattro   1.8  1999     4 auto… 4        16    25 p     comp…\n10 audi         a4 quattro   2    2008     4 manu… 4        20    28 p     comp…"
+  },
+  {
+    "objectID": "posts/day 2/index.html#using-glimpse-mosaic-skimr-and-mutate-to-organize-data",
+    "href": "posts/day 2/index.html#using-glimpse-mosaic-skimr-and-mutate-to-organize-data",
+    "title": "Day 2(Summaries)",
+    "section": "Using glimpse, mosaic, skimr and mutate to organize data",
+    "text": "Using glimpse, mosaic, skimr and mutate to organize data\n\nglimpse(mpg)\n\nRows: 234\nColumns: 11\n$ manufacturer &lt;chr&gt; \"audi\", \"audi\", \"audi\", \"audi\", \"audi\", \"audi\", \"audi\", \"…\n$ model        &lt;chr&gt; \"a4\", \"a4\", \"a4\", \"a4\", \"a4\", \"a4\", \"a4\", \"a4 quattro\", \"…\n$ displ        &lt;dbl&gt; 1.8, 1.8, 2.0, 2.0, 2.8, 2.8, 3.1, 1.8, 1.8, 2.0, 2.0, 2.…\n$ year         &lt;int&gt; 1999, 1999, 2008, 2008, 1999, 1999, 2008, 1999, 1999, 200…\n$ cyl          &lt;int&gt; 4, 4, 4, 4, 6, 6, 6, 4, 4, 4, 4, 6, 6, 6, 6, 6, 6, 8, 8, …\n$ trans        &lt;chr&gt; \"auto(l5)\", \"manual(m5)\", \"manual(m6)\", \"auto(av)\", \"auto…\n$ drv          &lt;chr&gt; \"f\", \"f\", \"f\", \"f\", \"f\", \"f\", \"f\", \"4\", \"4\", \"4\", \"4\", \"4…\n$ cty          &lt;int&gt; 18, 21, 20, 21, 16, 18, 18, 18, 16, 20, 19, 15, 17, 17, 1…\n$ hwy          &lt;int&gt; 29, 29, 31, 30, 26, 26, 27, 26, 25, 28, 27, 25, 25, 25, 2…\n$ fl           &lt;chr&gt; \"p\", \"p\", \"p\", \"p\", \"p\", \"p\", \"p\", \"p\", \"p\", \"p\", \"p\", \"p…\n$ class        &lt;chr&gt; \"compact\", \"compact\", \"compact\", \"compact\", \"compact\", \"c…\n\n\n\ninspect(mpg)\n\n\ncategorical variables:  \n          name     class levels   n missing\n1 manufacturer character     15 234       0\n2        model character     38 234       0\n3        trans character     10 234       0\n4          drv character      3 234       0\n5           fl character      5 234       0\n6        class character      7 234       0\n                                   distribution\n1 dodge (15.8%), toyota (14.5%) ...            \n2 caravan 2wd (4.7%) ...                       \n3 auto(l4) (35.5%), manual(m5) (24.8%) ...     \n4 f (45.3%), 4 (44%), r (10.7%)                \n5 r (71.8%), p (22.2%), e (3.4%) ...           \n6 suv (26.5%), compact (20.1%) ...             \n\nquantitative variables:  \n   name   class    min     Q1 median     Q3  max        mean       sd   n\n1 displ numeric    1.6    2.4    3.3    4.6    7    3.471795 1.291959 234\n2  year integer 1999.0 1999.0 2003.5 2008.0 2008 2003.500000 4.509646 234\n3   cyl integer    4.0    4.0    6.0    8.0    8    5.888889 1.611534 234\n4   cty integer    9.0   14.0   17.0   19.0   35   16.858974 4.255946 234\n5   hwy integer   12.0   18.0   24.0   27.0   44   23.440171 5.954643 234\n  missing\n1       0\n2       0\n3       0\n4       0\n5       0\n\n\n\nskimr:: skim(mpg)\n\n\nData summary\n\n\nName\nmpg\n\n\nNumber of rows\n234\n\n\nNumber of columns\n11\n\n\n_______________________\n\n\n\nColumn type frequency:\n\n\n\ncharacter\n6\n\n\nnumeric\n5\n\n\n________________________\n\n\n\nGroup variables\nNone\n\n\n\nVariable type: character\n\n\n\n\n\n\n\n\n\n\n\n\n\nskim_variable\nn_missing\ncomplete_rate\nmin\nmax\nempty\nn_unique\nwhitespace\n\n\n\n\nmanufacturer\n0\n1\n4\n10\n0\n15\n0\n\n\nmodel\n0\n1\n2\n22\n0\n38\n0\n\n\ntrans\n0\n1\n8\n10\n0\n10\n0\n\n\ndrv\n0\n1\n1\n1\n0\n3\n0\n\n\nfl\n0\n1\n1\n1\n0\n5\n0\n\n\nclass\n0\n1\n3\n10\n0\n7\n0\n\n\n\nVariable type: numeric\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nskim_variable\nn_missing\ncomplete_rate\nmean\nsd\np0\np25\np50\np75\np100\nhist\n\n\n\n\ndispl\n0\n1\n3.47\n1.29\n1.6\n2.4\n3.3\n4.6\n7\n▇▆▆▃▁\n\n\nyear\n0\n1\n2003.50\n4.51\n1999.0\n1999.0\n2003.5\n2008.0\n2008\n▇▁▁▁▇\n\n\ncyl\n0\n1\n5.89\n1.61\n4.0\n4.0\n6.0\n8.0\n8\n▇▁▇▁▇\n\n\ncty\n0\n1\n16.86\n4.26\n9.0\n14.0\n17.0\n19.0\n35\n▆▇▃▁▁\n\n\nhwy\n0\n1\n23.44\n5.95\n12.0\n18.0\n24.0\n27.0\n44\n▅▅▇▁▁\n\n\n\n\n\n\nmpg_modified &lt;- mpg %&gt;%\n  dplyr::mutate(\n    cyl = as_factor(cyl),\n    fl = as_factor(fl),\n    drv = as_factor(drv),\n    class = as_factor(class),\n    trans = as_factor(trans)\n  )\nglimpse(mpg_modified)\n\nRows: 234\nColumns: 11\n$ manufacturer &lt;chr&gt; \"audi\", \"audi\", \"audi\", \"audi\", \"audi\", \"audi\", \"audi\", \"…\n$ model        &lt;chr&gt; \"a4\", \"a4\", \"a4\", \"a4\", \"a4\", \"a4\", \"a4\", \"a4 quattro\", \"…\n$ displ        &lt;dbl&gt; 1.8, 1.8, 2.0, 2.0, 2.8, 2.8, 3.1, 1.8, 1.8, 2.0, 2.0, 2.…\n$ year         &lt;int&gt; 1999, 1999, 2008, 2008, 1999, 1999, 2008, 1999, 1999, 200…\n$ cyl          &lt;fct&gt; 4, 4, 4, 4, 6, 6, 6, 4, 4, 4, 4, 6, 6, 6, 6, 6, 6, 8, 8, …\n$ trans        &lt;fct&gt; auto(l5), manual(m5), manual(m6), auto(av), auto(l5), man…\n$ drv          &lt;fct&gt; f, f, f, f, f, f, f, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, r, …\n$ cty          &lt;int&gt; 18, 21, 20, 21, 16, 18, 18, 18, 16, 20, 19, 15, 17, 17, 1…\n$ hwy          &lt;int&gt; 29, 29, 31, 30, 26, 26, 27, 26, 25, 28, 27, 25, 25, 25, 2…\n$ fl           &lt;fct&gt; p, p, p, p, p, p, p, p, p, p, p, p, p, p, p, p, p, p, r, …\n$ class        &lt;fct&gt; compact, compact, compact, compact, compact, compact, com…"
+  },
+  {
+    "objectID": "posts/day 2/index.html#trying-with-another-dataset",
+    "href": "posts/day 2/index.html#trying-with-another-dataset",
+    "title": "Day 2(Summaries)",
+    "section": "Trying with another dataset",
+    "text": "Trying with another dataset\n\nbabynames\n\n# A tibble: 1,924,665 × 5\n    year sex   name          n   prop\n   &lt;dbl&gt; &lt;chr&gt; &lt;chr&gt;     &lt;int&gt;  &lt;dbl&gt;\n 1  1880 F     Mary       7065 0.0724\n 2  1880 F     Anna       2604 0.0267\n 3  1880 F     Emma       2003 0.0205\n 4  1880 F     Elizabeth  1939 0.0199\n 5  1880 F     Minnie     1746 0.0179\n 6  1880 F     Margaret   1578 0.0162\n 7  1880 F     Ida        1472 0.0151\n 8  1880 F     Alice      1414 0.0145\n 9  1880 F     Bertha     1320 0.0135\n10  1880 F     Sarah      1288 0.0132\n# ℹ 1,924,655 more rows\n\n\n\nbabynames %&gt;% filter (name == \"Sara\") %&gt;% head(15)\n\n# A tibble: 15 × 5\n    year sex   name      n    prop\n   &lt;dbl&gt; &lt;chr&gt; &lt;chr&gt; &lt;int&gt;   &lt;dbl&gt;\n 1  1880 F     Sara    165 0.00169\n 2  1881 F     Sara    147 0.00149\n 3  1882 F     Sara    180 0.00156\n 4  1883 F     Sara    183 0.00152\n 5  1884 F     Sara    197 0.00143\n 6  1885 F     Sara    215 0.00151\n 7  1886 F     Sara    247 0.00161\n 8  1887 F     Sara    214 0.00138\n 9  1888 F     Sara    293 0.00155\n10  1889 F     Sara    286 0.00151\n11  1890 F     Sara    262 0.00130\n12  1891 F     Sara    260 0.00132\n13  1892 F     Sara    276 0.00123\n14  1893 F     Sara    290 0.00129\n15  1894 F     Sara    304 0.00129"
+  },
+  {
+    "objectID": "posts/day 2/index.html#using-glimpse-mosaic-skimr-and-mutate-to-organize-data-1",
+    "href": "posts/day 2/index.html#using-glimpse-mosaic-skimr-and-mutate-to-organize-data-1",
+    "title": "Day 2(Summaries)",
+    "section": "Using glimpse, mosaic, skimr and mutate to organize data",
+    "text": "Using glimpse, mosaic, skimr and mutate to organize data\n\nbabynames%&gt;% mosaic::inspect()\n\n\ncategorical variables:  \n  name     class levels       n missing\n1  sex character      2 1924665       0\n2 name character  97310 1924665       0\n                                   distribution\n1 F (59.1%), M (40.9%)                         \n2 Francis (0%), James (0%) ...                 \n\nquantitative variables:  \n  name   class      min        Q1    median        Q3          max         mean\n1 year numeric 1.88e+03 1.951e+03 1.985e+03 2.003e+03 2.017000e+03 1.974851e+03\n2    n integer 5.00e+00 7.000e+00 1.200e+01 3.200e+01 9.968600e+04 1.808733e+02\n3 prop numeric 2.26e-06 3.870e-06 7.300e-06 2.288e-05 8.154561e-02 1.362963e-04\n            sd       n missing\n1 3.402948e+01 1924665       0\n2 1.533337e+03 1924665       0\n3 1.151693e-03 1924665       0\n\n\n\nbabynames %&gt;% dplyr::glimpse()\n\nRows: 1,924,665\nColumns: 5\n$ year &lt;dbl&gt; 1880, 1880, 1880, 1880, 1880, 1880, 1880, 1880, 1880, 1880, 1880,…\n$ sex  &lt;chr&gt; \"F\", \"F\", \"F\", \"F\", \"F\", \"F\", \"F\", \"F\", \"F\", \"F\", \"F\", \"F\", \"F\", …\n$ name &lt;chr&gt; \"Mary\", \"Anna\", \"Emma\", \"Elizabeth\", \"Minnie\", \"Margaret\", \"Ida\",…\n$ n    &lt;int&gt; 7065, 2604, 2003, 1939, 1746, 1578, 1472, 1414, 1320, 1288, 1258,…\n$ prop &lt;dbl&gt; 0.07238359, 0.02667896, 0.02052149, 0.01986579, 0.01788843, 0.016…\n\n\n\nbabynames_modified &lt;- babynames %&gt;%\n  dplyr::mutate(\n    sex = as_factor(sex)\n  )\nglimpse(babynames_modified)\n\nRows: 1,924,665\nColumns: 5\n$ year &lt;dbl&gt; 1880, 1880, 1880, 1880, 1880, 1880, 1880, 1880, 1880, 1880, 1880,…\n$ sex  &lt;fct&gt; F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F, F,…\n$ name &lt;chr&gt; \"Mary\", \"Anna\", \"Emma\", \"Elizabeth\", \"Minnie\", \"Margaret\", \"Ida\",…\n$ n    &lt;int&gt; 7065, 2604, 2003, 1939, 1746, 1578, 1472, 1414, 1320, 1288, 1258,…\n$ prop &lt;dbl&gt; 0.07238359, 0.02667896, 0.02052149, 0.01986579, 0.01788843, 0.016…\n\n\n\nbabynames %&gt;% skimr::skim()\n\n\nData summary\n\n\nName\nPiped data\n\n\nNumber of rows\n1924665\n\n\nNumber of columns\n5\n\n\n_______________________\n\n\n\nColumn type frequency:\n\n\n\ncharacter\n2\n\n\nnumeric\n3\n\n\n________________________\n\n\n\nGroup variables\nNone\n\n\n\nVariable type: character\n\n\n\n\n\n\n\n\n\n\n\n\n\nskim_variable\nn_missing\ncomplete_rate\nmin\nmax\nempty\nn_unique\nwhitespace\n\n\n\n\nsex\n0\n1\n1\n1\n0\n2\n0\n\n\nname\n0\n1\n2\n15\n0\n97310\n0\n\n\n\nVariable type: numeric\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nskim_variable\nn_missing\ncomplete_rate\nmean\nsd\np0\np25\np50\np75\np100\nhist\n\n\n\n\nyear\n0\n1\n1974.85\n34.03\n1880\n1951\n1985\n2003\n2017.00\n▁▂▃▅▇\n\n\nn\n0\n1\n180.87\n1533.34\n5\n7\n12\n32\n99686.00\n▇▁▁▁▁\n\n\nprop\n0\n1\n0.00\n0.00\n0\n0\n0\n0\n0.08\n▇▁▁▁▁"
+  },
+  {
+    "objectID": "posts/day 2/index.html#grouped-for-columns-using-mpg-dataset",
+    "href": "posts/day 2/index.html#grouped-for-columns-using-mpg-dataset",
+    "title": "Day 2(Summaries)",
+    "section": "Grouped for columns (using mpg dataset)",
+    "text": "Grouped for columns (using mpg dataset)\n\nmpg_modified %&gt;%\n  group_by(cyl) %&gt;%\n  summarize(average_hwy = mean(hwy), count = n())\n\n# A tibble: 4 × 3\n  cyl   average_hwy count\n  &lt;fct&gt;       &lt;dbl&gt; &lt;int&gt;\n1 4            28.8    81\n2 5            28.8     4\n3 6            22.8    79\n4 8            17.6    70"
+  },
+  {
+    "objectID": "posts/day 2/index.html#grouping-with-cyl-and-fl",
+    "href": "posts/day 2/index.html#grouping-with-cyl-and-fl",
+    "title": "Day 2(Summaries)",
+    "section": "Grouping with cyl and fl",
+    "text": "Grouping with cyl and fl\n\nmpg_modified %&gt;%\n  group_by(cyl, fl) %&gt;%\n  summarize(average_hwy = mean(hwy), count = n())\n\n`summarise()` has grouped output by 'cyl'. You can override using the `.groups`\nargument.\n\n\n# A tibble: 13 × 4\n# Groups:   cyl [4]\n   cyl   fl    average_hwy count\n   &lt;fct&gt; &lt;fct&gt;       &lt;dbl&gt; &lt;int&gt;\n 1 4     p            27.8    22\n 2 4     r            28.3    55\n 3 4     d            43       3\n 4 4     c            36       1\n 5 5     r            28.8     4\n 6 6     p            25.3    17\n 7 6     r            22.2    60\n 8 6     e            17       1\n 9 6     d            22       1\n10 8     p            20.8    13\n11 8     r            17.5    49\n12 8     e            12.7     7\n13 8     d            17       1\n\n\n\nmpg %&gt;% \n  group_by(manufacturer) %&gt;% \n  summarize(average_cty = mean(cty), count = n())\n\n# A tibble: 15 × 3\n   manufacturer average_cty count\n   &lt;chr&gt;              &lt;dbl&gt; &lt;int&gt;\n 1 audi                17.6    18\n 2 chevrolet           15      19\n 3 dodge               13.1    37\n 4 ford                14      25\n 5 honda               24.4     9\n 6 hyundai             18.6    14\n 7 jeep                13.5     8\n 8 land rover          11.5     4\n 9 lincoln             11.3     3\n10 mercury             13.2     4\n11 nissan              18.1    13\n12 pontiac             17       5\n13 subaru              19.3    14\n14 toyota              18.5    34\n15 volkswagen          20.9    27"
+  },
+  {
+    "objectID": "posts/day 2/index.html#math-anxiety-data",
+    "href": "posts/day 2/index.html#math-anxiety-data",
+    "title": "Day 2(Summaries)",
+    "section": "Math Anxiety Data",
+    "text": "Math Anxiety Data\n\nmath_an &lt;- read_delim(\"../../data/MathAnxiety.csv\")\n\nRows: 599 Columns: 6\n── Column specification ────────────────────────────────────────────────────────\nDelimiter: \";\"\nchr (2): Gender, Grade\ndbl (3): AMAS, RCMAS, Arith,\nnum (1): Age\n\nℹ Use `spec()` to retrieve the full column specification for this data.\nℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.\n\nmath_an\n\n# A tibble: 599 × 6\n     Age Gender Grade      AMAS RCMAS `Arith,`\n   &lt;dbl&gt; &lt;chr&gt;  &lt;chr&gt;     &lt;dbl&gt; &lt;dbl&gt;    &lt;dbl&gt;\n 1  1378 Boy    Secondary     9    20        6\n 2  1407 Boy    Secondary    18     8        6\n 3  1379 Girl   Secondary    23    26        5\n 4  1428 Girl   Secondary    19    18        7\n 5  1356 Boy    Secondary    23    20        1\n 6  1350 Girl   Secondary    27    33        1\n 7  1336 Boy    Secondary    22    23        4\n 8  1393 Boy    Secondary    17    11        7\n 9  1317 Girl   Secondary    28    32        2\n10  1348 Boy    Secondary    20    30        6\n# ℹ 589 more rows"
+  },
+  {
+    "objectID": "posts/day 2/index.html#organizing-data",
+    "href": "posts/day 2/index.html#organizing-data",
+    "title": "Day 2(Summaries)",
+    "section": "Organizing Data",
+    "text": "Organizing Data\n\nmath_an %&gt;% dplyr::glimpse()\n\nRows: 599\nColumns: 6\n$ Age      &lt;dbl&gt; 1378, 1407, 1379, 1428, 1356, 1350, 1336, 1393, 1317, 1348, 1…\n$ Gender   &lt;chr&gt; \"Boy\", \"Boy\", \"Girl\", \"Girl\", \"Boy\", \"Girl\", \"Boy\", \"Boy\", \"G…\n$ Grade    &lt;chr&gt; \"Secondary\", \"Secondary\", \"Secondary\", \"Secondary\", \"Secondar…\n$ AMAS     &lt;dbl&gt; 9, 18, 23, 19, 23, 27, 22, 17, 28, 20, 16, 20, 21, 36, 16, 27…\n$ RCMAS    &lt;dbl&gt; 20, 8, 26, 18, 20, 33, 23, 11, 32, 30, 10, 4, 23, 26, 24, 21,…\n$ `Arith,` &lt;dbl&gt; 6, 6, 5, 7, 1, 1, 4, 7, 2, 6, 2, 5, 2, 6, 2, 7, 2, 4, 7, 3, 8…\n\n\n\nmath_an %&gt;% mosaic::inspect()\n\n\ncategorical variables:  \n    name     class levels   n missing\n1 Gender character      2 599       0\n2  Grade character      2 599       0\n                                   distribution\n1 Boy (53.9%), Girl (46.1%)                    \n2 Primary (66.9%), Secondary (33.1%)           \n\nquantitative variables:  \n    name   class min     Q1 median     Q3  max       mean         sd   n\n1    Age numeric  37 1061.5   1208 1418.5 1875 1246.49249 223.112183 599\n2   AMAS numeric   4   18.0     22   26.5   45   21.98164   6.597962 599\n3  RCMAS numeric   1   14.0     19   25.0   41   19.24040   7.566802 599\n4 Arith, numeric   0    4.0      6    7.0    8    5.30217   2.105220 599\n  missing\n1       0\n2       0\n3       0\n4       0\n\n\n\nmath_an %&gt;% skimr::skim()\n\n\nData summary\n\n\nName\nPiped data\n\n\nNumber of rows\n599\n\n\nNumber of columns\n6\n\n\n_______________________\n\n\n\nColumn type frequency:\n\n\n\ncharacter\n2\n\n\nnumeric\n4\n\n\n________________________\n\n\n\nGroup variables\nNone\n\n\n\nVariable type: character\n\n\n\n\n\n\n\n\n\n\n\n\n\nskim_variable\nn_missing\ncomplete_rate\nmin\nmax\nempty\nn_unique\nwhitespace\n\n\n\n\nGender\n0\n1\n3\n4\n0\n2\n0\n\n\nGrade\n0\n1\n7\n9\n0\n2\n0\n\n\n\nVariable type: numeric\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nskim_variable\nn_missing\ncomplete_rate\nmean\nsd\np0\np25\np50\np75\np100\nhist\n\n\n\n\nAge\n0\n1\n1246.49\n223.11\n37\n1061.5\n1208\n1418.5\n1875\n▁▁▇▇▃\n\n\nAMAS\n0\n1\n21.98\n6.60\n4\n18.0\n22\n26.5\n45\n▂▆▇▃▁\n\n\nRCMAS\n0\n1\n19.24\n7.57\n1\n14.0\n19\n25.0\n41\n▂▇▇▅▁\n\n\nArith,\n0\n1\n5.30\n2.11\n0\n4.0\n6\n7.0\n8\n▂▃▃▇▇"
+  },
+  {
+    "objectID": "posts/day 2/index.html#factorizing",
+    "href": "posts/day 2/index.html#factorizing",
+    "title": "Day 2(Summaries)",
+    "section": "Factorizing",
+    "text": "Factorizing\n\nmath_an_modified &lt;- math_an %&gt;%\n  dplyr::mutate(\n    Age = as_factor(Age),\n    Gender = as_factor(Gender),\n    Grade = as_factor(Grade),\n  )\nglimpse(math_an_modified)\n\nRows: 599\nColumns: 6\n$ Age      &lt;fct&gt; 1378, 1407, 1379, 1428, 1356, 1350, 1336, 1393, 1317, 1348, 1…\n$ Gender   &lt;fct&gt; Boy, Boy, Girl, Girl, Boy, Girl, Boy, Boy, Girl, Boy, Boy, Bo…\n$ Grade    &lt;fct&gt; Secondary, Secondary, Secondary, Secondary, Secondary, Second…\n$ AMAS     &lt;dbl&gt; 9, 18, 23, 19, 23, 27, 22, 17, 28, 20, 16, 20, 21, 36, 16, 27…\n$ RCMAS    &lt;dbl&gt; 20, 8, 26, 18, 20, 33, 23, 11, 32, 30, 10, 4, 23, 26, 24, 21,…\n$ `Arith,` &lt;dbl&gt; 6, 6, 5, 7, 1, 1, 4, 7, 2, 6, 2, 5, 2, 6, 2, 7, 2, 4, 7, 3, 8…"
+  },
+  {
+    "objectID": "posts/day 2/index.html#anxiety-based-on-gender",
+    "href": "posts/day 2/index.html#anxiety-based-on-gender",
+    "title": "Day 2(Summaries)",
+    "section": "Anxiety based on Gender",
+    "text": "Anxiety based on Gender\n\nmath_an_modified %&gt;%\n  group_by(Gender) %&gt;%\n  summarize(average_AMAS = mean(AMAS),average_RCMAS = mean(RCMAS), count = n())\n\n# A tibble: 2 × 4\n  Gender average_AMAS average_RCMAS count\n  &lt;fct&gt;         &lt;dbl&gt;         &lt;dbl&gt; &lt;int&gt;\n1 Boy            21.2          18.1   323\n2 Girl           22.9          20.6   276"
+  },
+  {
+    "objectID": "posts/day 2/index.html#anxiety-based-on-age",
+    "href": "posts/day 2/index.html#anxiety-based-on-age",
+    "title": "Day 2(Summaries)",
+    "section": "Anxiety based on Age",
+    "text": "Anxiety based on Age\n\nmath_an_modified %&gt;%\n  group_by(Age) %&gt;%\n  summarize(average_AMAS = mean(AMAS),average_RCMAS = mean(RCMAS), count = n())\n\n# A tibble: 391 × 4\n   Age   average_AMAS average_RCMAS count\n   &lt;fct&gt;        &lt;dbl&gt;         &lt;dbl&gt; &lt;int&gt;\n 1 37            11             5       1\n 2 837           26            23       1\n 3 910           17            13       1\n 4 925           28            21       1\n 5 927           10            12       1\n 6 931           16            20       1\n 7 938           29.5          26.5     2\n 8 940           13            15       1\n 9 947           17            31       2\n10 948           14            17       1\n# ℹ 381 more rows"
+  },
+  {
+    "objectID": "posts/day 2/index.html#anxiety-based-on-grade",
+    "href": "posts/day 2/index.html#anxiety-based-on-grade",
+    "title": "Day 2(Summaries)",
+    "section": "Anxiety based on Grade",
+    "text": "Anxiety based on Grade\n\nmath_an_modified %&gt;%\n  group_by(Grade) %&gt;%\n  summarize(average_AMAS = mean(AMAS),average_RCMAS = mean(RCMAS), count = n())\n\n# A tibble: 2 × 4\n  Grade     average_AMAS average_RCMAS count\n  &lt;fct&gt;            &lt;dbl&gt;         &lt;dbl&gt; &lt;int&gt;\n1 Secondary         22.3          18.5   198\n2 Primary           21.8          19.6   401"
+  },
+  {
+    "objectID": "posts/day 2/index.html#anxiety-based-on-gender-grade",
+    "href": "posts/day 2/index.html#anxiety-based-on-gender-grade",
+    "title": "Day 2(Summaries)",
+    "section": "Anxiety based on Gender & Grade",
+    "text": "Anxiety based on Gender & Grade\n\nmath_an_modified %&gt;%\n  group_by(Gender, Grade) %&gt;%\n  summarize(average_AMAS = mean(AMAS),average_RCMAS = mean(RCMAS), count = n())\n\n`summarise()` has grouped output by 'Gender'. You can override using the\n`.groups` argument.\n\n\n# A tibble: 4 × 5\n# Groups:   Gender [2]\n  Gender Grade     average_AMAS average_RCMAS count\n  &lt;fct&gt;  &lt;fct&gt;            &lt;dbl&gt;         &lt;dbl&gt; &lt;int&gt;\n1 Boy    Secondary         21.5          17.4   124\n2 Boy    Primary           20.9          18.6   199\n3 Girl   Secondary         23.5          20.3    74\n4 Girl   Primary           22.7          20.6   202"
+  }
+]

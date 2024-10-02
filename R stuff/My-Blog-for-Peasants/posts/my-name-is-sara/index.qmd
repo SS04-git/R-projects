@@ -1,0 +1,60 @@
+---
+title: "My Name Is Sara"
+author: "Sara Saju"
+---
+
+## Introduction
+
+*I am writing this for Arvind's class. Its kind of interesting.*
+
+## My First Piece of R Code
+
+```{r}
+#| label: setup
+library(tidyverse)
+library(ggformula)
+library(babynames)
+
+```
+
+## Using the babynames library to get a list of data
+
+```{r}
+babynames
+```
+
+## Filtering the data
+
+```{r}
+babynames %>% filter (name == "Sara")
+```
+
+## Creating a graph
+
+```{r}
+babynames %>% filter(name == "Sara") %>% 
+  gf_line(n~year)
+```
+
+*Sara was a more popular name than I thought it was.*
+
+## Filtering data and plotting names with different spellings
+
+```{r}
+babynames %>% filter(name == "Sara"| name == "Sarah") %>% gf_line(n~year)
+```
+
+## Filtering the data (part 2)
+
+```{r}
+babynames %>% filter(name == "Maya"| name == "Maaya")
+```
+
+```         
+```
+
+## Graph of the received data
+
+```{r}
+babynames %>% filter(name == "Maya"| name == "Maaya") %>% gf_line (n~year)
+```

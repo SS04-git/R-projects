@@ -1,0 +1,186 @@
+---
+title: "Day 2(Summaries)"
+author: "Sara"
+---
+
+## Introduction
+
+This is the work done for day 2 where we summarized data including mpg.
+
+## Import packages
+
+Always place '#\| label: setup' before calling the packages.
+
+Also, one has to install packages at the console below using : install.packages("").
+
+```{r}
+#| label: setup
+library(tidyverse)
+library(mosaic)
+library(skimr)
+library(knitr)
+library(kableExtra)
+library(ggformula)
+library(babynames)
+```
+
+## Mpg Dataset
+
+```{r}
+mpg
+```
+
+## Filtering the data(1st 10)
+
+```{r}
+mpg %>% 
+  head(10)
+```
+
+## Using glimpse, mosaic, skimr and mutate to organize data
+
+```{r}
+glimpse(mpg)
+```
+
+```{r}
+inspect(mpg)
+```
+
+```{r}
+skimr:: skim(mpg)
+```
+
+```{r}
+mpg_modified <- mpg %>%
+  dplyr::mutate(
+    cyl = as_factor(cyl),
+    fl = as_factor(fl),
+    drv = as_factor(drv),
+    class = as_factor(class),
+    trans = as_factor(trans)
+  )
+glimpse(mpg_modified)
+```
+
+## Trying with another dataset
+
+```{r}
+babynames
+```
+
+```{r}
+babynames %>% filter (name == "Sara") %>% head(15)
+```
+
+## Using glimpse, mosaic, skimr and mutate to organize data
+
+```{r}
+babynames%>% mosaic::inspect()
+```
+
+```{r}
+babynames %>% dplyr::glimpse()
+```
+
+```{r}
+babynames_modified <- babynames %>%
+  dplyr::mutate(
+    sex = as_factor(sex)
+  )
+glimpse(babynames_modified)
+```
+
+```{r}
+babynames %>% skimr::skim()
+```
+
+## Grouped for columns (using mpg dataset)
+
+```{r}
+mpg_modified %>%
+  group_by(cyl) %>%
+  summarize(average_hwy = mean(hwy), count = n())
+```
+
+## Grouping with cyl and fl
+
+```{r}
+mpg_modified %>%
+  group_by(cyl, fl) %>%
+  summarize(average_hwy = mean(hwy), count = n())
+```
+
+```{r}
+mpg %>% 
+  group_by(manufacturer) %>% 
+  summarize(average_cty = mean(cty), count = n())
+```
+
+## Math Anxiety Data
+
+```{r}
+math_an <- read_delim("../../data/MathAnxiety.csv")
+math_an
+```
+
+## Organizing Data
+
+```{r}
+math_an %>% dplyr::glimpse()
+```
+
+```{r}
+math_an %>% mosaic::inspect()
+```
+
+```{r}
+math_an %>% skimr::skim()
+```
+
+## Factorizing
+
+```{r}
+math_an_modified <- math_an %>%
+  dplyr::mutate(
+    Age = as_factor(Age),
+    Gender = as_factor(Gender),
+    Grade = as_factor(Grade),
+  )
+glimpse(math_an_modified)
+```
+
+```         
+```
+
+## Anxiety based on Gender
+
+```{r}
+math_an_modified %>%
+  group_by(Gender) %>%
+  summarize(average_AMAS = mean(AMAS),average_RCMAS = mean(RCMAS), count = n())
+```
+
+## Anxiety based on Age
+
+```{r}
+math_an_modified %>%
+  group_by(Age) %>%
+  summarize(average_AMAS = mean(AMAS),average_RCMAS = mean(RCMAS), count = n())
+```
+
+## Anxiety based on Grade
+
+```{r}
+math_an_modified %>%
+  group_by(Grade) %>%
+  summarize(average_AMAS = mean(AMAS),average_RCMAS = mean(RCMAS), count = n())
+```
+
+## Anxiety based on Gender & Grade
+
+```{r}
+math_an_modified %>%
+  group_by(Gender, Grade) %>%
+  summarize(average_AMAS = mean(AMAS),average_RCMAS = mean(RCMAS), count = n())
+```
